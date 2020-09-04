@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class asc {
+  public static void main() 
+  {   int num, i, j, temp;
+    Scanner sc = new Scanner(System.in);
+    int a[] = new int[15]; 
+    System.out.println("Enter 15 integers"); 
+    for (i=0; i<15; i++) 
+      a[i] = sc.nextInt(); 
+    for (i=0; i<(15-1); i++) 
+    {   for (j=0; j<15-i-1; j++) 
+        {   if (a[j] > a[j+1]) 
+            {  temp = a[j];
+               a[j] = a[j+1];
+               a[j+1] = temp;
+            }
+        }
+    } 
+    System.out.println("Sorted list of integers:"); 
+    for (i=0; i<15; i++) 
+      System.out.println(a[i]);
+  }
+}
