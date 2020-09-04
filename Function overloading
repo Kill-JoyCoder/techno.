@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class series
+{   void series(int x,int n)
+    {double s=0;
+     for(int i=1; i<=n; i++)
+       s=s+Math.pow(x,i);
+        System.out.println("Sum="+(int)s);     
+    }
+    void series(int p)
+    { double s=0; System.out.println("Series ");
+      for (int i=1; i<=p; i++)
+       { s=Math.pow(i,3)-1;
+         System.out.print((int)s+", ");
+        } System.out.println();
+    }
+    void series()
+    { double s=0;
+      for(int i=2; i<=10; i++)
+       s=s+1/i;
+        System.out.println("Sum="+(int)s);     
+    }
+    static void main()
+    {  series obj = new series();
+       obj.series(5,10);
+       obj.series(6);
+       obj.series();
+    }
+}      
