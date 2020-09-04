@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+class p1
+{ static void main()
+    {  Scanner sc = new Scanner(System.in);
+       System.out.println("Enter 'a' for 1st pattern\n'b' for 2nd pattern");
+       char c=sc.next().charAt(0);
+       switch(c)
+       {   case 'a': System.out.println("Letters  Unicode"); 
+           for(int i=65; i<=90; i++)
+              System.out.println((char)i+"        "+i);
+           break;
+           case 'b':
+           for(int j=1;j<=5;j++)
+           {  for(int l=1; l<=j; l++)
+               System.out.print(l+" ");
+              System.out.println();
+            }
+        }
+    }
+}
